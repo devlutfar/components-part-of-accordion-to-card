@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font links -->
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <title>BT5</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>justify</h1>
+        <div class="row justify-content-lg-start ">
+          <div class="col col-lg-2">start</div>
+        </div>
+        <div class="row justify-content-lg-center">
+          <div class="col col-lg-2">center</div>
+        </div>
+        <div class="row justify-content-lg-end">
+          <div class="col col-lg-2">end</div>
+        </div>
+        </div>
+    </section>
+    <div class="container">
+      
+    <h1>row columns</h1>
+    <div class="container">
+      <div class="row row-cols-5">
+        <div class="col">Column1</div>
+        <div class="col">Column2</div>
+        <div class="col">Column3</div>
+        <div class="col">Column4</div>
+        <div class="col">Column5</div>
+      </div>
+    </div>
+    <h1>Horizontal alignment</h1>
+    <section class="bg-danger">
+      <div class="container">
+        <div class="row justify-content-start align-items-start mh">
+          <div class="col-lg-4">
+            <div class="box">start</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-danger">
+      <div class="container">
+        <div class="row justify-content-center align-items-center mh">
+          <div class="col-lg-4">
+            <div class="box">center</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-danger">
+      <div class="container">
+        <div class="row justify-content-end align-items-end mh">
+          <div class="col-lg-4">
+            <div class="box">end </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary">
+      <div class="container">
+        <div class="row justify-content-around mh">
+          <div class="col-lg-4">
+            <div class="box">around </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box">around </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-secondary">
+      <div class="container">
+        <div class="row justify-content-between mh">
+          <div class="col-lg-4">
+            <div class="box">between</div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box">between</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-success">
+      <div class="container">
+        <div class="row justify-content-evenly mh">
+          <div class="col-lg-4">
+            <div class="box">evenly</div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box">evenly</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h1>Gutters</h1>
+    <section class="bg-info px-4">
+      <div class="container">
+        <div class="row justify-content-center align-items-center mh">
+          <div class="col-lg-4">
+            <div class="box">Gutters</div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box">Gutters</div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Components -->
+    <h1>Components</h1>
+    <h2 >Accordion</h2>
+    <div class="accordion">
+      <section > 
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      <section>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- alert part start-->
+      <section>
+        <h2>Alert Part</h2>
+          <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
+          <div class="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
+      </section>
+        <h2>Show live alert</h2>
+          <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+       <section>
+         <br>
+         <h2>Link color</h2>
+           <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.animi <a class="alert-link" href="#" >Click Here</a></h3>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+           </div>
+       </section>
+       <section>
+         <h2>Alert Icons</h2>
+         <div class="alert alert-primary d-flex align-items-center" role="alert">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </symbol>
+          </svg>
+          <div>
+            An example alert with an icon
+          </div>
+        </div>
+        <div class="alert alert-warning d-flex align-items-center" role="alert">
+          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+          <div>
+            An example warning alert with an icon
+          </div>
+        </div>
+       </section>
+       <br>
+       <section>
+      <!-- alert part end-->
+      <!-- Badges part start -->
+         <h2>Badges</h2>
+         <h4>Example heading <span class="badge bg-primary">New</span></h4>
+       </section>
+          <br>
+          <h4>Example for Buttons</h4>
+            <button type="button" class="btn btn-primary">
+            Notifications <span class="badge bg-secondary">7</span>
+            </button>
+          <br>
+          <h4>Example for Positioned</h4>
+          <button type="button" class="btn btn-secondary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              85+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          <br><br>
+          <button type="button" class="btn btn-success position-relative">
+            Profile
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-warning border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button>
+          <br>
+          <h4>Background colors</h4>
+          <span class="badge bg-primary">Primary</span>
+          <span class="badge bg-secondary">Secondary</span>
+          <span class="badge bg-success">Success</span>
+          <span class="badge bg-danger">Danger</span>
+          <span class="badge bg-warning text-dark">Warning</span>
+          <span class="badge bg-info text-dark">Info</span>
+          <span class="badge bg-light text-dark">Light</span>
+          <span class="badge bg-dark">Dark</span>
+          <br><br>
+          <h4>Pill badges</h4>
+          <span class="badge rounded-pill bg-primary">Primary</span>
+          <span class="badge rounded-pill bg-secondary">Secondary</span>
+          <span class="badge rounded-pill bg-success">Success</span>
+          <span class="badge rounded-pill bg-danger">Danger</span>
+          <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+          <span class="badge rounded-pill bg-info text-dark">Info</span>
+          <span class="badge rounded-pill bg-light text-dark">Light</span>
+          <span class="badge rounded-pill bg-dark">Dark</span>
+          <br>
+          <section>
+          <!-- Badges part end -->
+          <!-- Breadcrumb part start -->
+            <h2>Breadcrumb</h2>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+              </ol>
+            </nav>
+            
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+            <h4>Dividers</h4>
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+              </ol>
+            </nav>
+          </section>
+          <section>
+          <!-- Breadcrumb part end -->
+          <!-- Buttons part start -->
+            <h2>Buttons</h2>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+          </section>
+          <br>
+          <h4>Button tags</h4>
+          <a class="btn btn-primary" href="#" role="button">Link</a>
+          <button class="btn btn-primary" type="submit">Button</button>
+          <input class="btn btn-primary" type="button" value="Input">
+          <input class="btn btn-primary" type="submit" value="Submit">
+          <input class="btn btn-primary" type="reset" value="Reset">
+          <br>
+          <h4>Outline buttons</h4>
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+          <button type="button" class="btn btn-outline-secondary">Secondary</button>
+          <button type="button" class="btn btn-outline-success">Success</button>
+          <button type="button" class="btn btn-outline-danger">Danger</button>
+          <button type="button" class="btn btn-outline-warning">Warning</button>
+          <button type="button" class="btn btn-outline-info">Info</button>
+          <button type="button" class="btn btn-outline-light">Light</button>
+          <button type="button" class="btn btn-outline-dark">Dark</button>
+          <!-- Buttons part end -->
+          <br><br>
+          <!-- Button group part start -->
+          <h2>Button group</h2>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-success">Right</button>
+          </div>
+          <br><br>
+          <h4>Checkbox and radio button groups</h4>
+          <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+          
+            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+          
+            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+          </div>
+          <br><br>
+          <h4>Button toolbar</h4>
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-primary">1</button>
+              <button type="button" class="btn btn-primary">2</button>
+              <button type="button" class="btn btn-primary">3</button>
+              <button type="button" class="btn btn-primary">4</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+              <button type="button" class="btn btn-secondary">5</button>
+              <button type="button" class="btn btn-secondary">6</button>
+              <button type="button" class="btn btn-secondary">7</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+              <button type="button" class="btn btn-info">8</button>
+            </div>
+          </div>
+          <br><br>
+          <!-- Button group part end -->
+    
+          <!-- Cards part start -->
+          <section>
+            <h2>Cards</h2>
+            <div class="card" style="width: 18rem;">
+              <img src="images/cards.jpg" class="card-img-top" alt="cards">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-info">Go somewhere</a>
+              </div>
+            </div>
+          </section>
+          <!-- Cards part end -->
+          <br>
+          <!-- Button trigger modal -->
+          <h2>Modal</h2>
+          <h4>Live demo</h4>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<h4>Static backdrop</h4>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<h4>Scrolling long content</h4>
+    </div>
+    <!-- JS links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

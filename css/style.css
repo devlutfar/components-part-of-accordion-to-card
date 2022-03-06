@@ -1,0 +1,25 @@
+.box {
+  min-height: 100px;
+  background-color: teal;
+  border: 1px solid white;
+}
+
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+h2 {
+  text-transform: capitalize;
+  text-align: center;
+  background-color: gray;
+}
+.col {
+  min-height: 100px;
+  background-color: teal;
+  border: 1px solid white;
+}
+.mh {
+  margin-top: 10px;
+  min-height: 150px;
+}
